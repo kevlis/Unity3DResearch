@@ -1,5 +1,5 @@
 pipeline {
-      environment {
+    environment {
         UNITY_PATH = "AAAAAAAAAAAA";
     }
 
@@ -10,7 +10,7 @@ pipeline {
         parallel(
           "ABC": {
             echo 'hello world'
-            UNITY_PATH = "BBBBBBBBBBBB"            
+            AAAA = "BBBBBBBBBBBB"            
           },
           "DEF": {
             echo 'go'                
@@ -21,7 +21,8 @@ pipeline {
     stage('End') {
       steps {
         echo 'end'
-        echo "${UNITY_PATH}"
+        AAAA = "BBBBBB"
+        echo "${AAAA}"
       }
     }
   }
