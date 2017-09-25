@@ -1,6 +1,6 @@
 pipeline {
-    define {
-       def UNITY_PATH = "AAAAAAAAAAAA"
+    environment {
+       UNITY_PATH = "AAAAAAAAAAAA"
      }
   agent none
   stages {
