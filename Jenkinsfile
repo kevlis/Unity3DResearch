@@ -11,14 +11,14 @@ pipeline {
           "ABC": {
             echo 'hello world'
             echo "${UNITY_PATH}"
-            UNITY_PATH = "BBBBBBBBBBBB"            
+            env.UNITY_PATH = "BBBBBBBBBBBB"            
             echo "${UNITY_PATH}"
             echo UNITY_PATH
           },
           "DEF": {
             echo 'go'                
             echo "${UNITY_PATH}"
-            UNITY_PATH = "CCCCCCCCCC"
+            env.UNITY_PATH = "CCCCCCCCCC"
             echo "${UNITY_PATH}"
             echo UNITY_PATH
           }
