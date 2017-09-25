@@ -1,7 +1,5 @@
 pipeline {
-    environment {
-       UNITY_PATH = "AAAAAAAAAAAA"
-     }
+
   agent none
   stages {
     stage('error') {
