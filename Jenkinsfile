@@ -11,10 +11,12 @@ pipeline {
           "ABC": {
             echo 'hello world'
             echo "${UNITY_PATH}"
+            echo UNITY_PATH
           },
           "DEF": {
             echo 'go'
             echo "${UNITY_PATH}"
+            echo UNITY_PATH
           }
         )
       }
