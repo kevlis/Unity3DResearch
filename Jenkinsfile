@@ -4,11 +4,11 @@ pipeline {
     stage('error') {
       steps {
         parallel(
-          "error": {
+          "ABC": {
             echo 'hello world'
             
           },
-          "": {
+          "DEF": {
             echo 'go'
             
           }
