@@ -1,7 +1,7 @@
 pipeline {
   agent none
-  def UNITY_PATH = "AAAAAAAAAAAA";
   stages {
+    def UNITY_PATH = "AAAAAAAAAAAA";
     stage('error') {
       steps {
         parallel(
