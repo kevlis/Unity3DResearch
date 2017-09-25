@@ -6,10 +6,9 @@ pipeline {
       steps {
             parallel(
               "ABC": {
-                echo 'hello world'
-                local AAV = "AVCD"
+                echo 'hello world'                
                   script {
-                    
+                    def AAV = "AVCD"
                     AAV = "ADV"  
                   }
               },
