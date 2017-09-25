@@ -1,5 +1,7 @@
 pipeline {
-
+  define {
+    AAV = "AVCD";
+  }
   agent none
   stages {
     stage('error') {
@@ -8,7 +10,7 @@ pipeline {
               "ABC": {
                 echo 'hello world'
                   script {
-                    UNITY_PATH = "BBBBBBBBBBBB"  
+                    AAV = "ADV"  
                   }
               },
               "DEF": {
@@ -20,7 +22,7 @@ pipeline {
     stage('End') {
       steps {
         echo 'end'
-        echo "${UNITY_PATH}"
+        echo "${AAV}"
       }
     }
   }
