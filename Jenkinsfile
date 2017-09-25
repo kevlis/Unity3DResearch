@@ -1,6 +1,6 @@
 pipeline {
   define {
-    AAV = "AVCD";
+    def AAV = "AVCD";
   }
   agent none
   stages {
