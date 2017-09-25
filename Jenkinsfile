@@ -14,7 +14,6 @@ pipeline {
           },
           "DEF": {
             echo 'go'                
-            env.UNITY_PATH = "CCCCCCCCCC"
           }
         )
       }
