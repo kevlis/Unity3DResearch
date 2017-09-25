@@ -7,8 +7,9 @@ pipeline {
             parallel(
               "ABC": {
                 echo 'hello world'
+                def AAV = "AVCD"
                   script {
-                    def AAV = "AVCD";
+                    
                     AAV = "ADV"  
                   }
               },
