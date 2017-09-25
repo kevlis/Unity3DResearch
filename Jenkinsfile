@@ -9,8 +9,9 @@ pipeline {
             parallel(
               "ABC": {
                 echo 'hello world'
-                UNITY_PATH = "BBBBBBBBBBBB"  
-
+                  script {
+                    UNITY_PATH = "BBBBBBBBBBBB"  
+                  }
               },
               "DEF": {
                 echo 'go'                
