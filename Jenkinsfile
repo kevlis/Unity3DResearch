@@ -12,7 +12,11 @@ pipeline {
         parallel(
           "ABC": {
             echo 'hello world'
-            UNITY_PATH = "BBBBBBBBBBBB"            
+            script {
+              //If def can be anywhere in pipeline {}, drop script {}
+              UNITY_PATH = "BBBBBBBBBBBB"  
+            }
+                      
           },
           "DEF": {
             echo 'go'                
@@ -23,7 +27,6 @@ pipeline {
     stage('End') {
       steps {
         echo 'end'
-        UNITY_PATH = "BBBBBB"
         echo "${UNITY_PATH}"
       }
     }
