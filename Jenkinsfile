@@ -6,7 +6,6 @@ pipeline {
   stages {
     stage('error') {
       steps {
-          script {
             parallel(
               "ABC": {
                 echo 'hello world'
@@ -17,7 +16,6 @@ pipeline {
                 echo 'go'                
               }
             )
-          }
       }
     }
     stage('End') {
