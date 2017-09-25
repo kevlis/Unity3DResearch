@@ -1,8 +1,10 @@
 pipeline {
     environment {
-        UNITY_PATH = "AAAAAAAAAAAA";
+        AAAAA = "AAAAAAAAAAAA";
     }
-
+    define {
+        UNITY_PATH = "AAAAAAAAAAAA";
+     }
   agent none
   stages {
     stage('error') {
@@ -10,7 +12,7 @@ pipeline {
         parallel(
           "ABC": {
             echo 'hello world'
-            AAAA = "BBBBBBBBBBBB"            
+            UNITY_PATH = "BBBBBBBBBBBB"            
           },
           "DEF": {
             echo 'go'                
@@ -21,8 +23,8 @@ pipeline {
     stage('End') {
       steps {
         echo 'end'
-        AAAA = "BBBBBB"
-        echo "${AAAA}"
+        UNITY_PATH = "BBBBBB"
+        echo "${UNITY_PATH}"
       }
     }
   }
