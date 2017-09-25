@@ -1,5 +1,6 @@
 pipeline {
   agent none
+  def UNITY_PATH = "AAAAAAAAAAAA";
   stages {
     stage('error') {
       steps {
