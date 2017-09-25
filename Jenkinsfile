@@ -1,7 +1,5 @@
 pipeline {
-  define {
-    def AAV = "AVCD";
-  }
+
   agent none
   stages {
     stage('error') {
@@ -10,6 +8,7 @@ pipeline {
               "ABC": {
                 echo 'hello world'
                   script {
+                    def AAV = "AVCD";
                     AAV = "ADV"  
                   }
               },
