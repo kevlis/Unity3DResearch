@@ -8,11 +8,13 @@ pipeline {
         parallel(
           "ABC": {
             echo 'hello world'
-            
+            echo "${UNITY_PATH}"
+            echo UNITY_PATH
           },
           "DEF": {
             echo 'go'
-            
+            echo "${UNITY_PATH}"
+            echo UNITY_PATH
           }
         )
       }
@@ -20,6 +22,8 @@ pipeline {
     stage('End') {
       steps {
         echo 'end'
+        echo "${UNITY_PATH}"
+        echo UNITY_PATH
       }
     }
   }
