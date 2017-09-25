@@ -3,7 +3,7 @@ pipeline {
         AAAAA = "AAAAAAAAAAAA";
     }
     define {
-        UNITY_PATH = "AAAAAAAAAAAA";
+       def UNITY_PATH = "AAAAAAAAAAAA";
      }
   agent none
   stages {
