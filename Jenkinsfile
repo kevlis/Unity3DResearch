@@ -10,12 +10,14 @@ pipeline {
         parallel(
           "ABC": {
             echo 'hello world'
+            UNITY_PATH = "BBBBBBBBBBBB" 
             echo "${UNITY_PATH}"
             echo UNITY_PATH
           },
           "DEF": {
-            echo 'go'
+            echo 'go'                
             echo "${UNITY_PATH}"
+            UNITY_PATH = "CCCCCCCCCC" 
             echo UNITY_PATH
           }
         )
